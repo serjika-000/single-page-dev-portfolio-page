@@ -1,19 +1,19 @@
 import { ReactNode, HTMLAttributes } from "react";
 
-// * TYPES
+
 interface Props extends HTMLAttributes<HTMLAnchorElement | HTMLButtonElement> {
   children: ReactNode;
   type?: "button" | "submit" | "reset" | "link";
   href?: string;
-  // rest?:
+  
 }
 
-// * COMPONENT: Button
+
 function Button({ type = "button", children, href, ...rest }: Props) {
   let renderButton: ReactNode;
 
   if (type === "link") {
-    // @ anchor link
+  
     renderButton = (
       <a
         href={href}
@@ -27,7 +27,7 @@ function Button({ type = "button", children, href, ...rest }: Props) {
       </a>
     );
   } else {
-    // @ button
+    
     renderButton = (
       <button
         type={type}
@@ -42,7 +42,7 @@ function Button({ type = "button", children, href, ...rest }: Props) {
     );
   }
 
-  // @ Output
+  
   return renderButton;
 }
 

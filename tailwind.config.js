@@ -52,7 +52,7 @@ export default {
       fontFamily: {
         SpaceGrotesk: ["Space Grotesk", "sans-serif"],
       },
-      // fontSize: {},
+      
     },
   },
   plugins: [],
