@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import SocialLinkIcon, { SocialSite } from "../ui/social/SocialLinkIcon";
 
-// * TYPES
 
-// * COMPONENT: Navbar
 function Navbar() {
   const [socialSites, setSocialSites] = useState<SocialSite[]>();
 
@@ -17,7 +15,7 @@ function Navbar() {
     <SocialLinkIcon key={site.icon} socialSite={site} />
   ));
 
-  // @ Output
+ 
   return (
     <div className="flex flex-col items-center space-y-5 md:flex-row md:justify-between md:space-y-0 ">
       <span className="text-base font-bold md:text-xm lg:text-xm">

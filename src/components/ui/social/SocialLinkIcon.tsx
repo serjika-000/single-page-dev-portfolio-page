@@ -46,7 +46,7 @@ function SocialLinkIcon({ socialSite }: Props) {
           <path
             fill="#FFF"
             className="transition duration-300 hover:fill-green"
-            
+           
           />
         </svg>
       );
@@ -76,7 +76,7 @@ function SocialLinkIcon({ socialSite }: Props) {
       break;
   }
 
-  
+ 
   return (
     <a href={socialSite.href} className="" title={socialSite.title}>
       {renderIcon}

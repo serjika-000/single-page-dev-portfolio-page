@@ -1,11 +1,10 @@
-// * TYPES
-// interface Props {}
+
 
 import ContactForm from "../form/ContactForm";
 
-// * COMPONENT: ContactSection
+
 function ContactSection() {
-  // @ Output
+ 
   return (
     <section
       id="contact"

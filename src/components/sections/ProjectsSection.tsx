@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ProjectCard from "../cards/ProjectCard";
 import Button from "../ui/buttons/Button";
 
-// * TYPES
+
 
 export interface Project {
   title: string;
@@ -13,7 +13,7 @@ export interface Project {
   codePage: string;
 }
 
-// * COMPONENT: ProjectsSection
+
 function ProjectsSection() {
   const [projects, setProjects] = useState<Project[]>();
 
@@ -27,7 +27,7 @@ function ProjectsSection() {
     <ProjectCard key={project.slug} project={project} />
   ));
 
-  // @ Output
+
   return (
     <section className="section-container mb-[8.0rem] md:mb-[145px] lg:mb-[140px]">
       <div className="flex justify-between items-center mb-10 md:mb-[60px] lg:mb-[80px]">
