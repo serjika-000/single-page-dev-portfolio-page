@@ -1,4 +1,4 @@
-// * TYPES
+
 export interface SocialSite {
   icon: string;
   href: string;
